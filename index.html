@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>mobile-design</title>
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body oncontextmenu="return false">
+  <p class="sorry">Sorry this page can only be display on desktop</p>
+  <div class="container">
+    <div class="parent">
+      <div class="face" style="width: 320px; height: 500px; transform: translateZ(18px)">
+        <div class="con-camera-face">
+          <div class="face-camera">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+        <iframe src="https://ibrahemmagdy-portfolio.netlify.app/" frameborder="0"></iframe>
+
+        <div class="off"></div>
+        <div class="face-border"></div>
+      </div>
+      <div class="back" style="
+            width: 320px;
+            height: 500px;
+            transform: rotateY(180deg) translateZ(18px);
+          ">
+        <div class="con-camera">
+          <div class="back-camera">
+            <div></div>
+          </div>
+          <div class="flash"></div>
+        </div>
+        <h2>IM</h2>
+      </div>
+      <div class="side side-right" style="
+            width: 36px;
+            height: 500px;
+            transform: rotateY(90deg) translateZ(302px);
+          ">
+        <div class="control-sound">
+          <div class="heigh"></div>
+          <div class="low"></div>
+        </div>
+        <div class="power"></div>
+      </div>
+      <div class="side side-left" style="
+            width: 36px;
+            height: 500px;
+            transform: rotateY(90deg) translateZ(-18px);
+          ">
+        <div class="con-power">
+          <div class="power"></div>
+        </div>
+      </div>
+      <div class="top" style="
+            height: 36px;
+            width: 320px;
+            transform: rotateX(-90deg) translateZ(482px) rotate(180deg);
+          ">
+        <div class="sounds">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="charge"></div>
+        <div class="headphone"></div>
+      </div>
+      <div class="bottom" style="
+            height: 36px;
+            width: 320px;
+            transform: rotateX(-90deg) translateZ(-18px) rotate(180deg);
+          ">
+        <div></div>
+      </div>
+    </div>
+  </div>
+  <!-- <button class="animation">animate</button> -->
+  <form class="con-form hide_setting">
+    <div class="setting">
+      <i class="fas fa-cog"></i>
+    </div>
+    <input type="number" placeholder="Width" class="width" min="200" required="required" />
+    <input type="number" placeholder="Height" class="height" min="300" required />
+    <input type="number" placeholder="size of side" class="distance" min="10" required />
+    <input type="text" placeholder="web url" class="url" />
+
+    <div class="con-slider">
+      <label for="">rotate : </label>
+      <input type="range" placeholder="distance" id="range" class="slider" required min="0" max="360" />
+    </div>
+
+    <div class="con-slider">
+      <label for="">rotateX : </label>
+      <input type="range" placeholder="distance" required min="0" max="360" id="rangeX" class="slider" />
+    </div>
+
+    <div class="con-slider">
+      <label for="">rotateY : </label>
+      <input type="range" placeholder="distance" id="rangeY" class="slider" required min="0" max="360" />
+    </div>
+
+    <button class="apply">apply</button>
+  </form>
+  <script src="index.js"></script>
+</body>
+
+</html>
